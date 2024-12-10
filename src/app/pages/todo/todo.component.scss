@@ -18,14 +18,14 @@
     &.first {
 
         .card-body {
-            border-bottom: 2px solid #f2c8e0;
+            border-bottom: 5px solid #d80f81;
         }
     }
 
     &.last {
 
         .card-body {
-            border-bottom: 2px solid #bcecde;
+            border-bottom: 10px solid #05e09e;
         }
     }
 
@@ -130,7 +130,7 @@
 
             &__fill {
               height: 100%;
-              background-color: #ff6347;
+              background-color: #dd6510;
               transition: width 0.3s ease-in-out;
             }
 

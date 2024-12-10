@@ -13,10 +13,18 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  todoData= TODO_DATA;
+  todoData = TODO_DATA;
 
 
   getTodoInfo(val: NTodo.TodoData) {
     console.log(val);
+  }
+
+  trackByFn(_index:number, item:NTodo.TodoData){
+    return item.id
+  }
+
+  orderData(){
+    this.todoData.sort((a, b) => a.priority - b.priority)
   }
 }
